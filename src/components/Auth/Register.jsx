@@ -8,6 +8,7 @@ import { Link, Navigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { Context } from "../../main";
+import img from "../../images/job-main.jpg"
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -50,6 +51,7 @@ const Register = () => {
 
   return (
     <>
+    <img className="img-main" src={img} alt="" />
       <section className="authPage">
         <div className="container">
           <div className="header">

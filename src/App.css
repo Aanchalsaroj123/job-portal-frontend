@@ -75,15 +75,20 @@ p {
     font-size: 1.15rem;
   }
 }
-
+.img-main{
+  width: 100%;
+  height:80%;
+  z-index: -99;
+  /* visibility: hidden; */
+  position:absolute;
+}
 .authPage {
   display: flex;
-  padding-left: 500px;
-  padding-right: 500px;
-  min-width: 1500px;
-  max-width: 1500px;
-  margin: 0 auto;
-  min-height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 40%;
+  margin: 20px auto;
+  /* min-height: 100vh; */
 }
 .authPage .container {
   flex: 1;
@@ -91,7 +96,7 @@ p {
   flex-direction: column;
   justify-content: center;
   background: #fff;
-  padding: 20px 20px;
+  padding: 2px 20px;
 }
 .authPage .container .header {
   display: flex;
@@ -181,25 +186,33 @@ p {
 }
 @media (max-width: 1520px) {
   .authPage {
-    min-width: 100%;
+    flex-direction: column;
   }
 }
 @media (max-width: 830px) {
   .authPage {
-    min-height: 100vh;
-    height: auto;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+  }
+  .authPage {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    margin: 20px auto;
+    /* min-height: 100vh; */
   }
   .authPage .container {
-    flex: none;
     width: 100%;
     justify-content: flex-start;
     padding: 40px 20px;
   }
   .authPage .banner {
-    flex: none;
     display: none;
   }
 }
+
 
 .footerShow {
   background: #18191c;
